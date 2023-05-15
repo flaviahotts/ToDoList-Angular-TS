@@ -1,6 +1,8 @@
 # TodoList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+This project was generated with Angular CLI, Typescript and Cloud Firestore.<br>
+It is a simple To Do List App where the user can create a todo, check if is done and delete it.<br>
+Next steps are add more styling and deploy
 
 ## Development server
 
