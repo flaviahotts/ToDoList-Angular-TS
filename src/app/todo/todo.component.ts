@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TodoService } from '../shared/todo.service';
 
 @Component({
   selector: 'app-todo',
@@ -8,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoComponent implements OnInit{
 
-  constructor() { }
+  constructor(private todoService:TodoService) { }
 
   ngOnInit(): void {
   }
 
+  onClick(titleInput: HTMLInputElement){
+    if(titleInput.value)
+  this.todoService.addTodo(titleInput.value);
+  titleInput.value = " ";
+  }
 }
